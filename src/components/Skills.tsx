@@ -1,8 +1,8 @@
 import {
   Cloud,
+  Code2,
   Database,
   Layers,
-  Shield,
   type LucideIcon,
 } from "lucide-react";
 import { skillGroups } from "@/data/portfolio";
@@ -10,17 +10,17 @@ import Reveal from "./Reveal";
 import SectionHeading from "./SectionHeading";
 
 const groupIcons: Record<string, LucideIcon> = {
+  Frontend: Code2,
   Backend: Layers,
   "Cloud & DevOps": Cloud,
-  "Data & Security": Shield,
-  "Quality & Frontend": Database,
+  "Data & Quality": Database,
 };
 
 const groupColors: Record<string, string> = {
+  Frontend: "from-cyan-500/20 to-cyan-500/5 text-cyan-300",
   Backend: "from-emerald-500/20 to-emerald-500/5 text-emerald-300",
-  "Cloud & DevOps": "from-cyan-500/20 to-cyan-500/5 text-cyan-300",
-  "Data & Security": "from-violet-500/20 to-violet-500/5 text-violet-300",
-  "Quality & Frontend": "from-amber-500/20 to-amber-500/5 text-amber-300",
+  "Cloud & DevOps": "from-violet-500/20 to-violet-500/5 text-violet-300",
+  "Data & Quality": "from-amber-500/20 to-amber-500/5 text-amber-300",
 };
 
 export default function Skills() {
@@ -33,8 +33,8 @@ export default function Skills() {
         <SectionHeading
           id="skills"
           eyebrow="Skills"
-          title="Core competencies"
-          description="Backend architecture, cloud platforms, and the practices that keep systems maintainable at scale."
+          title="Full stack toolkit"
+          description="Frontend frameworks, Java backends, databases, and the cloud tooling to ship production applications end to end."
         />
 
         <div className="grid gap-5 sm:grid-cols-2">
@@ -64,7 +64,7 @@ export default function Skills() {
                     ))}
                   </div>
 
-                  <div className="pointer-events-none absolute -bottom-8 -right-8 h-32 w-32 rounded-full bg-emerald-500/10 blur-3xl transition-opacity group-hover:opacity-100 opacity-0" />
+                  <div className="pointer-events-none absolute -bottom-8 -right-8 h-32 w-32 rounded-full bg-emerald-500/10 blur-3xl opacity-0 transition-opacity group-hover:opacity-100" />
                 </div>
               </Reveal>
             );

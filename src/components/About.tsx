@@ -6,22 +6,22 @@ const stats = [
   {
     value: "13+",
     label: "Years experience",
-    detail: "Enterprise backend delivery",
+    detail: "Full stack & architecture",
   },
   {
-    value: "4",
-    label: "Certifications",
-    detail: "Oracle Master & AWS",
+    value: "2",
+    label: "Frontend stacks",
+    detail: "Angular · React",
   },
   {
-    value: "3",
-    label: "Industry domains",
-    detail: "Finance · Health · Logistics",
+    value: "90%",
+    label: "Test coverage",
+    detail: "Backend + frontend tests",
   },
   {
     value: "8",
     label: "Engineers led",
-    detail: "Remote Agile teams",
+    detail: "Full stack Agile teams",
   },
 ];
 
@@ -34,8 +34,8 @@ export default function About() {
         <SectionHeading
           id="about"
           eyebrow="About"
-          title="Enterprise backend architect"
-          description="Focused on production-grade systems, clean code, and teams that ship reliably at scale."
+          title="Full stack engineer"
+          description="I build complete products — not just APIs. From UI components and routing to services, security, and cloud deployment."
         />
 
         <div className="grid gap-8 lg:grid-cols-[1.35fr_1fr]">
@@ -46,16 +46,21 @@ export default function About() {
                 {profile.summary}
               </p>
               <div className="relative mt-8 flex flex-wrap gap-2">
-                {["Spring Boot", "Microservices", "AWS", "Kubernetes"].map(
-                  (tag) => (
-                    <span
-                      key={tag}
-                      className="rounded-full border border-emerald-500/20 bg-emerald-500/10 px-3 py-1 text-xs font-medium text-emerald-200"
-                    >
-                      {tag}
-                    </span>
-                  ),
-                )}
+                {[
+                  "Angular",
+                  "React",
+                  "Spring Boot",
+                  "REST APIs",
+                  "AWS",
+                  "Kubernetes",
+                ].map((tag) => (
+                  <span
+                    key={tag}
+                    className="rounded-full border border-emerald-500/20 bg-emerald-500/10 px-3 py-1 text-xs font-medium text-emerald-200"
+                  >
+                    {tag}
+                  </span>
+                ))}
               </div>
             </div>
           </Reveal>

@@ -12,8 +12,8 @@ export default function Experience() {
         <SectionHeading
           id="experience"
           eyebrow="Experience"
-          title="Professional journey"
-          description="Thirteen years of building and leading backend systems across finance, healthcare, and logistics."
+          title="Full stack journey"
+          description="From Angular UI components and Spring Boot APIs to cloud deployments — thirteen years of end-to-end delivery."
         />
 
         <div className="relative">
@@ -45,6 +45,18 @@ export default function Experience() {
                           <span className="text-slate-600"> · </span>
                           {job.location}
                         </p>
+                        {"stack" in job && job.stack && (
+                          <div className="mt-4 flex flex-wrap gap-2">
+                            {job.stack.map((tech) => (
+                              <span
+                                key={tech}
+                                className="rounded-full border border-cyan-500/20 bg-cyan-500/10 px-2.5 py-1 text-xs font-medium text-cyan-200"
+                              >
+                                {tech}
+                              </span>
+                            ))}
+                          </div>
+                        )}
                       </div>
                     </div>
 

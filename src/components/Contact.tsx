@@ -1,4 +1,4 @@
-import { ArrowUpRight, Mail } from "lucide-react";
+import { Mail } from "lucide-react";
 import { profile } from "@/data/portfolio";
 import BackgroundMesh from "./BackgroundMesh";
 import LinkedInIcon from "./LinkedInIcon";
@@ -16,7 +16,7 @@ export default function Contact() {
           id="contact"
           eyebrow="Contact"
           title="Let's connect"
-          description="Open to architecture roles, technical leadership, and backend engineering opportunities."
+          description="Open to full stack Java roles, technical leadership, and end-to-end product engineering opportunities."
           align="center"
         />
 
@@ -25,8 +25,8 @@ export default function Contact() {
             <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/10 via-transparent to-cyan-500/10" />
 
             <p className="relative mx-auto max-w-2xl text-xl leading-relaxed text-slate-300">
-              Whether you&apos;re hiring for a Java architect role or exploring a
-              complex backend challenge, I&apos;d love to hear from you.
+              Need someone who can own the frontend, backend, and deployment?
+              I&apos;d love to hear about your next project.
             </p>
 
             <div className="relative mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
@@ -36,10 +36,6 @@ export default function Contact() {
               >
                 <Mail size={18} />
                 {profile.email}
-                <ArrowUpRight
-                  size={16}
-                  className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-                />
               </a>
               <a
                 href={profile.linkedin}

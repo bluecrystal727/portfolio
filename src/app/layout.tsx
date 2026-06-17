@@ -14,22 +14,24 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ram Kumar | Java Architect",
+  title: "Ram Kumar | Full Stack Java Developer",
   description:
-    "Portfolio of Ram Kumar — Java Architect with 13+ years building enterprise microservices, Spring Boot backends, and cloud-native systems.",
+    "Portfolio of Ram Kumar — Full Stack Java Developer with 13+ years building Angular/React frontends, Spring Boot backends, and cloud-native applications.",
   keywords: [
+    "Full Stack Java Developer",
     "Java Architect",
     "Spring Boot",
+    "Angular",
+    "React",
     "Microservices",
     "AWS",
-    "Backend Developer",
     "Ram Kumar",
   ],
   authors: [{ name: "Ram Kumar" }],
   openGraph: {
-    title: "Ram Kumar | Java Architect",
+    title: "Ram Kumar | Full Stack Java Developer",
     description:
-      "Enterprise backend architect specializing in Java, Spring Boot, and cloud-native microservices.",
+      "Full stack engineer specializing in Java, Spring Boot, Angular, React, and cloud-native delivery.",
     type: "website",
   },
 };
