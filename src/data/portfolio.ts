@@ -3,7 +3,7 @@ export const profile = {
   title: "Full Stack Java Developer",
   subtitle: "Java Architect & Technical Lead",
   location: "Huntsville, TX",
-  email: "bestdev007@proton.me",
+  email: "ramkumar327@outlook.com",
   linkedin: "https://www.linkedin.com/in/ram-kumar-32b223149/",
   summary:
     "Full Stack Java Developer with 13+ years building end-to-end enterprise applications — from Angular and React frontends to Spring Boot microservices and cloud deployments. Equally comfortable wiring REST APIs to UI components, leading teams of 8 engineers, and defining architecture standards for Fortune-class clients. One of fewer than 5% of engineers holding both Oracle Certified Master Java EE Enterprise Architect and AWS Certified Developer credentials. Proven across financial services, healthcare, and logistics with clean code, strong test coverage, and reliable delivery.",
